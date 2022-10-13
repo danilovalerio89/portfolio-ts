@@ -3,45 +3,29 @@ import styled, { css, keyframes } from "styled-components";
 interface IsOpenProps {
   isOpen: boolean;
 }
-
-export const HeaderStyled = styled.header`
-  color: white;
-  justify-content: space-between;
-  position: fixed;
-  width: 100vw;
-  border-bottom: 1.125px solid white;
-`;
-
-export const DivTitle = styled.div`
-  margin: 5px auto;
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-`;
-
 export const appearFromRight = keyframes`
-from{
-    opacity:1;
-    margin: 0px 0px 0px 0px;
-}
-to{
-    opacity:1;
-    margin: 0px 0px 0px -200px;
-}
-`;
+  from{
+      opacity:1;
+      margin: 0px 0px 0px 0px;
+  }
+  to{
+      opacity:1;
+      margin: 0px 0px 0px -200px;
+  }
+  `;
 
 export const appearFromLeft = keyframes`
-from{
-    opacity:1;
-    margin: 0px 0px 0px -200px;
+  from{
+      opacity:1;
+      margin: 0px 0px 0px -200px;
+  
+  }
+  to{
+       opacity:1;
+       margin: 0px 0px 0px 0px;
+  }`;
 
-}
-to{
-     opacity:1;
-     margin: 0px 0px 0px 0px;
-}`;
-
-export const SideBar = styled.div<IsOpenProps>`
+export const SideBarStyled = styled.div<IsOpenProps>`
   #menu {
     position: absolute;
     width: 100vw;
