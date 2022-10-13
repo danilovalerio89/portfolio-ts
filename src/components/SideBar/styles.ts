@@ -28,12 +28,11 @@ export const appearFromLeft = keyframes`
 export const SideBarStyled = styled.div<IsOpenProps>`
   #menu {
     position: absolute;
-    width: 100vw;
+    width: 105vw;
     height: 35vh;
-    border-top: 1.125px solid white;
+    border-top: var(--border-thin) solid var(--clr-light-100);
     margin: ${(props) =>
       props.isOpen ? "0px 0px 0px -200px" : "0px 0px 0px 0px"};
-    padding: 0 50px;
     transform: translate(100%, 0);
     transition: transform 0.5s ease-in-out;
     animation: ${(props) =>
@@ -47,28 +46,29 @@ export const SideBarStyled = styled.div<IsOpenProps>`
   }
 
   #menu li {
-    padding: 10px 0px;
+    background-color: var(--clr-background-secondary);
+    padding: 10px 30px;
     font-size: 22px;
-    color: white;
+    color: var(--clr-light-100);
     transition: 0.2s;
-    color: white;
+    color: var(--clr-light-100);
     display: flex;
     align-items: center;
     gap: 10px;
     transition: 0.2s;
     :hover {
-      color: black;
+      color: var(--clr-dark-500);
     }
   }
 
   li {
-    color: white;
+    color: var(--clr-light-100);
     display: flex;
     align-items: center;
     gap: 5px;
     transition: 300ms;
     :hover {
-      color: black;
+      color: var(--clr-dark-500);
       cursor: pointer;
     }
   }

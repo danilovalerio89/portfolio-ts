@@ -10,7 +10,9 @@ export function Header() {
     <>
       <HeaderStyled>
         <DivTitle>
-          <h1>Danilo</h1>
+          <h1>
+            &lt;<b>Danilo</b>/&gt;
+          </h1>
           <MenuBurguer />
         </DivTitle>
         <SideBar />
