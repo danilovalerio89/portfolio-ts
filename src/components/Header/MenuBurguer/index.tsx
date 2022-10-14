@@ -1,4 +1,4 @@
-import { useIsOpen } from "../../providers/isOpen";
+import { useIsOpen } from "../../../providers/isOpen";
 import {
   InputBurguer,
   LabelBox,

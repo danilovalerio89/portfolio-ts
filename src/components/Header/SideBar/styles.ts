@@ -28,7 +28,7 @@ export const appearFromLeft = keyframes`
 export const SideBarStyled = styled.div<IsOpenProps>`
   #menu {
     position: absolute;
-    width: 105vw;
+    width: 100vw;
     height: 35vh;
     border-top: var(--border-thin) solid var(--clr-light-100);
     margin: ${(props) =>

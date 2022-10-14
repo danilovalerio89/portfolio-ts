@@ -1,11 +1,10 @@
-import { useIsOpen } from "../../providers/isOpen";
-import MenuBurguer from "../MenuBurguer";
-import { SideBar } from "../SideBar";
+import MenuBurguer from "./MenuBurguer";
+import { SideBar } from "./SideBar";
 import { HeaderStyled, DivTitle } from "./styles";
 
-export function Header() {
-  const { isOpen } = useIsOpen();
+import { SideBarData } from "../../data/SideBarData";
 
+export function Header(): JSX.Element {
   return (
     <>
       <HeaderStyled>
@@ -15,7 +14,7 @@ export function Header() {
           </h1>
           <MenuBurguer />
         </DivTitle>
-        <SideBar />
+        <SideBar data={SideBarData} />
       </HeaderStyled>
     </>
   );
