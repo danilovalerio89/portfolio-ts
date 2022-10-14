@@ -36,6 +36,24 @@ export const AboutInfo = styled.div`
   gap: 10px;
 `;
 
+export const DivInfo = styled.div`
+  h2 {
+    font-size: var(--fs-200);
+    font-weight: 500;
+    margin: 0 0 25px 0;
+    color: var(--clr-dark-200);
+  }
+  h3 {
+    font-size: var(--fs-100);
+    letter-spacing: 1.5px;
+  }
+`;
+
+export const DivButtons = styled.div`
+  display: flex;
+  justify-content: space-around;
+`;
+
 export const KenzieAcademyText = styled.b`
   font-family: var(--SecondaryFont);
   text-decoration: underline;

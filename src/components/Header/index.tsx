@@ -11,7 +11,7 @@ export function Header() {
       <HeaderStyled>
         <DivTitle>
           <h1>
-            &lt;<b>Danilo</b>/&gt;
+            &lt;<b>D</b>/&gt;
           </h1>
           <MenuBurguer />
         </DivTitle>
