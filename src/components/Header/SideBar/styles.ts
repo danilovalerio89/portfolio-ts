@@ -3,6 +3,7 @@ import styled, { css, keyframes } from "styled-components";
 interface IsOpenProps {
   isOpen: boolean;
 }
+
 export const appearFromRight = keyframes`
   from{
       opacity:1;

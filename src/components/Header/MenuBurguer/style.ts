@@ -12,6 +12,10 @@ export const LabelBox = styled.label`
   justify-content: center;
   background-color: var(--clr-dark-500);
   cursor: pointer;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 `;
 
 export const SpanBase = styled.span<SpanProps>`

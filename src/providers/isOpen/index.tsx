@@ -1,9 +1,5 @@
 import { createContext, useContext, useState } from "react";
-import {
-  IsOpenContextProps,
-  IsOpenProps,
-  defaultState,
-} from "../@types/interfaces";
+import { IsOpenContextProps, IsOpenProps, defaultState } from "../interfaces";
 
 export const IsOpenContext = createContext<IsOpenContextProps>(defaultState);
 
