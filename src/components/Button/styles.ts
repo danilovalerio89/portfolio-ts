@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
-export const DivStyled = styled.div`
+export const DivStyled = styled.button`
+  background-color: black;
   border: 1px solid white;
   width: 45%;
   padding: 5px;

@@ -2,7 +2,7 @@ import { useIsOpen } from "../../../providers/isOpen";
 import { SideBarStyled } from "./styles";
 import { iData } from "../interfaces";
 
-export function SideBar({ data }: iData): JSX.Element {
+export function SideBar({ data }: iData) {
   const { isOpen } = useIsOpen();
 
   return (

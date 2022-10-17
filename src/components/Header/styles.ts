@@ -15,11 +15,6 @@ export const DivTitle = styled.div`
   justify-content: space-between;
   width: 90%;
   background-color: var(--clr-dark-500);
-  h1 {
-    font-size: var(--fs-500);
-    font-weight: 300;
-    background-color: var(--clr-dark-500);
-  }
   b {
     background-color: var(--clr-dark-500);
   }

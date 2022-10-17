@@ -53,11 +53,3 @@ export const DivButtons = styled.div`
   display: flex;
   justify-content: space-around;
 `;
-
-export const KenzieAcademyText = styled.b`
-  font-family: var(--SecondaryFont);
-  text-decoration: underline;
-  text-underline-offset: 5px;
-  text-transform: uppercase;
-`;
-export const AboutMeDivImg = styled.div``;
