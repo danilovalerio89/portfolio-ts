@@ -6,7 +6,7 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: 'Lato', sans-serif;
-        background-color: var(--clr-background-primary);
+        /* background-color: var(--clr-background-primary); */
         color: var(--clr-light-100);
     }
 :root{

@@ -1,35 +1,28 @@
 import Img from "../../assets/new-foto.jpg";
 import { Button } from "../Button";
-import {
-  AboutSection,
-  AboutPresentation,
-  DivPresentation,
-  AboutInfo,
-  DivInfo,
-  DivButtons,
-} from "./styles";
+import * as Component from "./styles";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
+
 export function About() {
   return (
-    <AboutSection>
-      <AboutPresentation>
+    <Component.AboutSection>
+      <Component.AboutPresentation>
         <img src={Img} alt="Profile Photo" />
-
-        <DivPresentation>
+        <Component.DivPresentation>
           <h3>Olá, tudo bom? Sou o</h3>
           <h1>Danilo</h1>
-        </DivPresentation>
-      </AboutPresentation>
+        </Component.DivPresentation>
+      </Component.AboutPresentation>
 
-      <AboutInfo>
-        <DivInfo>
+      <Component.AboutInfo>
+        <Component.DivInfo>
           <h2>DESENVOLVEDOR FULL STACK</h2>
           <h3>
             Desenvolvedor formado pela Kenzie Academy Brasil. Apaixonado por
             tecnologia, desafios e aprender coisas novas.
           </h3>
-        </DivInfo>
-        <DivButtons>
+        </Component.DivInfo>
+        <Component.DivButtons>
           <Button
             onClick={() =>
               window.open(
@@ -52,8 +45,8 @@ export function About() {
             <BsLinkedin />
             Linkedin
           </Button>
-        </DivButtons>
-      </AboutInfo>
-    </AboutSection>
+        </Component.DivButtons>
+      </Component.AboutInfo>
+    </Component.AboutSection>
   );
 }
