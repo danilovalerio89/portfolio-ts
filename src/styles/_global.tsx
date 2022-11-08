@@ -6,8 +6,8 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: 'Lato', sans-serif;
-        color: var(--clr-light-100);
     }
+    
 :root{
     --border-thin: 0.07rem;
     --border-regular: 0.125rem;

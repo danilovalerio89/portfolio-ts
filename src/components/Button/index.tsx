@@ -1,12 +1,34 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
 
-import { DivStyled } from "./styles";
+import * as S from "./styles";
 
-interface DivProps
-  extends ButtonHTMLAttributes<HTMLButtonElement & HTMLDivElement> {
-  children?: ReactNode;
+interface iButton extends ButtonHTMLAttributes<HTMLButtonElement> {
+  children: ReactNode;
+  fullWidth?: boolean;
+  buttonSize?: "xs" | "sm" | "md" | "lg" | "xl" | "link";
+  buttonStyle:
+    | "solidBlack"
+    | "solidWhite"
+    | "outlineBlack"
+    | "outlineWhite"
+    | "link";
 }
 
-export function Button({ children, ...rest }: DivProps): JSX.Element {
-  return <DivStyled {...rest}>{children}</DivStyled>;
+export function Button({
+  children,
+  buttonStyle,
+  fullWidth,
+  buttonSize,
+  ...rest
+}: iButton) {
+  return (
+    <S.Button
+      buttonStyle={buttonStyle}
+      fullWidth={fullWidth}
+      buttonSize={buttonSize}
+      {...rest}
+    >
+      {children}
+    </S.Button>
+  );
 }

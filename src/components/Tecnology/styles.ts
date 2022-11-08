@@ -21,6 +21,8 @@ export const TenologyDiv = styled.div`
   display: flex;
   flex-direction: column;
   width: 90%;
+  background-color: yellowgreen;
+  gap: 10px;
   p {
     color: black;
   }

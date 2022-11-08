@@ -1,11 +1,5 @@
 import { useIsOpen } from "../../../providers/isOpen";
-import {
-  InputBurguer,
-  LabelBox,
-  SpanBottom,
-  SpanMiddle,
-  SpanTop,
-} from "./style";
+import * as S from "./styles";
 
 function MenuBurguer() {
   const { isOpen, setIsOpen } = useIsOpen();
@@ -16,12 +10,12 @@ function MenuBurguer() {
 
   return (
     <>
-      <LabelBox>
-        <InputBurguer onChange={() => handleChecked()} />
-        <SpanTop check={isOpen} />
-        <SpanMiddle check={isOpen} />
-        <SpanBottom check={isOpen} />
-      </LabelBox>
+      <S.LabelBox>
+        <S.InputBurguer onChange={() => handleChecked()} />
+        <S.SpanTop check={isOpen} />
+        <S.SpanMiddle check={isOpen} />
+        <S.SpanBottom check={isOpen} />
+      </S.LabelBox>
     </>
   );
 }

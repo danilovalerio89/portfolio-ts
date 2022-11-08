@@ -1,20 +1,14 @@
 import styled from "styled-components";
 
-export const NavDiv = styled.div`
+export const Nav = styled.nav`
   display: flex;
   align-items: center;
-
-  ul {
-    display: flex;
-    gap: 20px;
-    li {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-  }
-
   @media (max-width: 768px) {
     display: none;
   }
+`;
+
+export const Ul = styled.ul`
+  display: flex;
+  gap: 20px;
 `;

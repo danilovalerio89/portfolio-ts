@@ -6,15 +6,15 @@ import { Typography } from "../../styles/typography";
 
 import { SideBarData } from "../../data/SideBarData";
 
-export function Header(): JSX.Element {
+export function Header() {
   return (
     <>
       <HeaderStyled>
         <DivTitle>
           <Typography tag={"h1"} fS={2}>
-            &lt;<b>D</b>/&gt;
+            &lt;<b>D</b>&gt;
           </Typography>
-          <NavBar data={SideBarData} />
+          <NavBar />
           <MenuBurguer />
         </DivTitle>
         <SideBar data={SideBarData} />
