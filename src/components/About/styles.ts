@@ -1,55 +1,35 @@
 import styled from "styled-components";
 
 export const AboutSection = styled.section`
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-`;
-export const AboutPresentation = styled.div`
-  display: flex;
-  gap: 20px;
-  align-items: center;
-
-  img {
-    width: 55px;
-    border-radius: 50%;
-  }
-`;
-
-export const DivPresentation = styled.div`
   width: 100%;
-  h3 {
-    letter-spacing: 1.5px;
-    font-weight: 400;
-  }
-  h1 {
-    font-weight: 800;
-    text-align: center;
-    font-size: var(--fs-500);
-  }
-`;
-
-export const AboutInfo = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 10px;
+
+  span {
+    font-weight: 400;
+    line-height: 23px;
+  }
 `;
 
-export const DivInfo = styled.div`
-  h2 {
-    font-size: var(--fs-200);
-    font-weight: 500;
-    margin: 0 0 25px 0;
+export const DivInfos = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: 40px 0;
+  h1 {
+    font-size: 46px;
+  }
+  h3 {
+    font-size: 20px;
     color: var(--clr-dark-200);
   }
-  h3 {
-    font-size: var(--fs-100);
-    letter-spacing: 1.5px;
+  p {
+    font-weight: 600;
+    font-size: 22px;
   }
 `;
 
 export const DivButtons = styled.div`
+  margin: 25px 0;
   display: flex;
   justify-content: space-around;
 `;

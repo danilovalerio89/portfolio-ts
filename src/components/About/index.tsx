@@ -2,42 +2,29 @@ import * as S from "./styles";
 import { Button } from "../Button";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { iInfos } from "../../data/InfosData";
+import { Typography } from "../../styles/typography";
 
 export function About({ data }: iInfos) {
   return (
     <S.AboutSection>
-      <S.AboutPresentation>
-        <img src={data.img} alt="Profile Photo" />
-        <S.DivPresentation>
-          <h3>Olá, tudo bom? Sou o</h3>
-          <h1>{data.name}</h1>
-        </S.DivPresentation>
-      </S.AboutPresentation>
-
-      <S.AboutInfo>
-        <S.DivInfo>
-          <h2>{data.stack}</h2>
-          <h3>{data.text}</h3>
-        </S.DivInfo>
-        <S.DivButtons>
-          <Button
-            buttonStyle="solidBlack"
-            buttonSize="xs"
-            onClick={() => window.open(`${data.links.git}`, "_blank")}
-          >
-            <BsGithub />
-            Github
-          </Button>
-          <Button
-            buttonStyle="outlineBlack"
-            buttonSize="xs"
-            onClick={() => window.open(`${data.links.linkedin}`, "_blank")}
-          >
-            <BsLinkedin />
-            Linkedin
-          </Button>
-        </S.DivButtons>
-      </S.AboutInfo>
+      <div>
+        <p>Olá, sou o</p>
+        <Typography tag={"h1"}>Danilo</Typography>
+        <Typography tag={"h2"}>DESENVOLVEDOR FULL STACK</Typography>
+      </div>
+      <div>
+        <p>
+          Futuro desenvolvedor FullStack pela KENZIE ACADEMY BRASIL. Sempre
+          buscando mais conhecimento e novos desafios. A constante evolução e a
+          possibilidade de resolver problemas de várias maneiras, são coisas que
+          me fazem me apaixonar cada vez mais pela área.
+        </p>
+      </div>
+      {/* <Title tag="h2">Danilo</Title>
+      <Title tag="h3">Danilo</Title>
+      <Title tag="h4">Danilo</Title>
+      <Title tag="h5">Danilo</Title>
+      <Title tag="h6">Danilo</Title> */}
     </S.AboutSection>
   );
 }

@@ -1,9 +1,8 @@
 import * as S from "./styles";
-import { Typography } from "../../styles/typography";
 import { Button } from "../Button";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { iInfos } from "../../data/InfosData";
-
+import { LOGO } from "../../styles/typography/styles";
 export function Footer({ data }: iInfos) {
   return (
     <>
@@ -26,9 +25,9 @@ export function Footer({ data }: iInfos) {
             LinkedIn
           </Button>
         </S.Contacts>
-        <Typography tag={"h1"} fS={2}>
+        <LOGO>
           &lt;/<b>D</b>&gt;
-        </Typography>
+        </LOGO>
       </S.Footer>
     </>
   );

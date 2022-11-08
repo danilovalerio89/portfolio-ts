@@ -15,12 +15,13 @@ export default createGlobalStyle`
 
     --fs-100: 1rem;
     --fs-200: 1.25rem;
-    --fs-300: 1.563rem;
-    --fs-400: 1.953rem;
-    --fs-500: 2.441rem;
-    --fs-600: 3.052rem;
-    --fs-700: 3.815rem;
-    --fs-800: 4.768rem;
+    --fs-300: 1.50rem;
+    --fs-400: 1.75rem;
+    --fs-500: 2rem;
+    --fs-600: 2.50rem;
+    --fs-700: 2.75rem;
+    --fs-800: 3rem;
+    --fs-900: 3.50rem;
     
     --clr-dark-400: #0F0F33;
     --clr-dark-500: #000000;
@@ -47,4 +48,6 @@ button{
     cursor: pointer;
     border: none;
 }
+
+
 `;

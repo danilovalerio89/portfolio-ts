@@ -1,57 +1,20 @@
-import { ReactNode } from "react";
-import * as Typo from "./styles";
+import { HTMLAttributes, ReactNode } from "react";
+import * as S from "./styles";
 
-export const colors = {
-  white: "#fff",
-  black: "#000",
-  grey: "#D4D4D4",
-  blue: "#201DAD",
-};
-
-export interface iTypography {
-  tag?: string;
-  children?: ReactNode;
-  fS?: 1 | 2 | 3;
-  fW?: 1 | 2 | 3;
-  lS?: 1 | 2 | 3;
-  clr?: keyof typeof colors;
+export interface iTitle extends HTMLAttributes<HTMLHeadingElement> {
+  children: ReactNode;
+  tag: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 }
 
-export function Typography({
-  children,
-  tag = "p",
-  fS = 3,
-  fW = 2,
-  lS = 1,
-  clr = "white",
-}: iTypography) {
+export function Typography({ children, tag }: iTitle) {
   return (
     <>
-      {tag == "h1" ? (
-        <Typo.H1 fS={fS} fW={fW} lS={lS} clr={clr}>
-          {children}
-        </Typo.H1>
-      ) : tag == "h2" ? (
-        <Typo.H2 as="h2" fS={fS} fW={fW} lS={lS} clr={clr}>
-          {children}
-        </Typo.H2>
-      ) : tag == "h3" ? (
-        <Typo.H3 as="h3" fS={fS} fW={fW} lS={lS} clr={clr}>
-          {children}
-        </Typo.H3>
-      ) : tag == "h4" ? (
-        <Typo.H4 as="h4" fS={fS} fW={fW} lS={lS} clr={clr}>
-          {children}
-        </Typo.H4>
-      ) : tag == "h5" ? (
-        <Typo.H5 as="h5" fS={fS} fW={fW} lS={lS} clr={clr}>
-          {children}
-        </Typo.H5>
-      ) : (
-        <Typo.P as="p" fS={fS} fW={fW} lS={lS} clr={clr}>
-          {children}
-        </Typo.P>
-      )}
+      {tag == "h1" && <S.H1>{children}</S.H1>}
+      {tag == "h2" && <S.H2>{children}</S.H2>}
+      {tag == "h3" && <S.H3>{children}</S.H3>}
+      {tag == "h4" && <S.H4>{children}</S.H4>}
+      {tag == "h5" && <h5>{children}</h5>}
+      {tag == "h6" && <h6>{children}</h6>}
     </>
   );
 }

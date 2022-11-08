@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const TecnologySection = styled.section`
-  margin-top: 40px;
   width: 100%;
   background-color: white;
   display: flex;
