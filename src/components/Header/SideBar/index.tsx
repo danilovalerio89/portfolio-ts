@@ -1,20 +1,26 @@
 import { useIsOpen } from "../../../providers/isOpen";
-import { SideBarStyled } from "./styles";
-import { iData } from "../interfaces";
+import * as S from "./styles";
+import { Button } from "../../Button";
+import { FiUser } from "react-icons/fi";
+import { RiComputerLine, RiFile3Line, RiMailLine } from "react-icons/ri";
 
-export function SideBar({ data }: iData) {
+export function SideBar() {
   const { isOpen } = useIsOpen();
 
   return (
-    <SideBarStyled isOpen={isOpen}>
-      <ul id="menu">
-        {data.map((item, index) => (
-          <li key={index}>
-            {item.icon}
-            {item.name}
-          </li>
-        ))}
-      </ul>
-    </SideBarStyled>
+    <S.Div isOpen={isOpen}>
+      <Button buttonStyle="linkNav" buttonSize="linkNav">
+        <FiUser /> Sobre
+      </Button>
+      <Button buttonStyle="linkNav" buttonSize="linkNav">
+        <RiComputerLine /> Tecnologias
+      </Button>
+      <Button buttonStyle="linkNav" buttonSize="linkNav">
+        <RiFile3Line /> Projetos
+      </Button>
+      <Button buttonStyle="linkNav" buttonSize="linkNav">
+        <RiMailLine /> Contatos
+      </Button>
+    </S.Div>
   );
 }

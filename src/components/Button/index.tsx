@@ -5,13 +5,14 @@ import * as S from "./styles";
 interface iButton extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   fullWidth?: boolean;
-  buttonSize?: "xs" | "sm" | "md" | "lg" | "xl" | "link";
+  buttonSize?: "xs" | "sm" | "md" | "lg" | "xl" | "link" | "linkNav";
   buttonStyle:
     | "solidBlack"
     | "solidWhite"
     | "outlineBlack"
     | "outlineWhite"
-    | "link";
+    | "link"
+    | "linkNav";
 }
 
 export function Button({

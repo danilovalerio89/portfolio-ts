@@ -10,10 +10,10 @@ export function Home() {
     <>
       <Header />
       <MainWrapper>
-        <About data={Infos} />
-        <Tecnology />
+        {/* <About data={Infos} /> */}
+        {/* <Tecnology /> */}
       </MainWrapper>
-      <Footer />
+      <Footer data={Infos} />
     </>
   );
 }

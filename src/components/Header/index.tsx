@@ -17,7 +17,7 @@ export function Header() {
           <NavBar />
           <MenuBurguer />
         </DivTitle>
-        <SideBar data={SideBarData} />
+        <SideBar />
       </HeaderStyled>
     </>
   );

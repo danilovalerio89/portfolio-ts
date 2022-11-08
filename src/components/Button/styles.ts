@@ -3,13 +3,14 @@ import styled, { css } from "styled-components";
 interface iButton {
   isLink?: boolean;
   fullWidth?: boolean;
-  buttonSize?: "xs" | "sm" | "md" | "lg" | "xl" | "link";
+  buttonSize?: "xs" | "sm" | "md" | "lg" | "xl" | "link" | "linkNav";
   buttonStyle:
     | "solidBlack"
     | "solidWhite"
     | "outlineBlack"
     | "outlineWhite"
-    | "link";
+    | "link"
+    | "linkNav";
 }
 
 export const Button = styled.button<iButton>`
@@ -58,10 +59,15 @@ export const Button = styled.button<iButton>`
           padding: 0 2.4rem;
           height: 62px;
         `;
-      case "link":
+      case "linkNav":
         return css`
           font-size: 1.2rem;
           padding: 0.8rem 0.3rem;
+        `;
+      case "link":
+        return css`
+          font-size: 1.2rem;
+          padding: 0.8rem 0rem;
         `;
     }
   }}
@@ -113,9 +119,12 @@ export const Button = styled.button<iButton>`
           position: relative;
           background-color: transparent;
           color: var(--clr-light-100);
-          /* &:hover {
-            color: var(--clr-dark-400);
-          } */
+        `;
+      case "linkNav":
+        return css`
+          position: relative;
+          background-color: transparent;
+          color: var(--clr-light-100);
           &::after {
             content: "";
             position: absolute;
@@ -139,23 +148,3 @@ export const Button = styled.button<iButton>`
     }
   }}
 `;
-
-// &:after {
-//   content: "";
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 0.1rem;
-//   background-color: hotpink;
-//   opacity: 0;
-//   transition: opacity 300ms, transform 300ms;
-// }
-// &::after {
-//   opacity: 1;
-//   transform: scale(0);
-//   transform-origin: center;
-// }
-// &:hover::after {
-//   transform: scale(1.1);
-// }

@@ -7,16 +7,16 @@ export function NavBar() {
   return (
     <S.Nav>
       <S.Ul>
-        <Button buttonStyle="link" buttonSize="link">
+        <Button buttonStyle="linkNav" buttonSize="linkNav">
           <FiUser /> Sobre
         </Button>
-        <Button buttonStyle="link" buttonSize="link">
+        <Button buttonStyle="linkNav" buttonSize="linkNav">
           <RiComputerLine /> Tecnologias
         </Button>
-        <Button buttonStyle="link" buttonSize="link">
+        <Button buttonStyle="linkNav" buttonSize="linkNav">
           <RiFile3Line /> Projetos
         </Button>
-        <Button buttonStyle="link" buttonSize="link">
+        <Button buttonStyle="linkNav" buttonSize="linkNav">
           <RiMailLine /> Contatos
         </Button>
       </S.Ul>
