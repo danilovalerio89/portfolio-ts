@@ -1,6 +1,5 @@
-import { ButtonHTMLAttributes, ReactNode } from "react";
-
 import * as S from "./styles";
+import { ButtonHTMLAttributes, ReactNode } from "react";
 
 interface iButton extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;

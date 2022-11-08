@@ -1,6 +1,6 @@
+import * as S from "./styles";
 import { Typography } from "../../styles/typography";
 import { Button } from "../Button";
-import * as S from "./styles";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { iInfos } from "../../data/InfosData";
 

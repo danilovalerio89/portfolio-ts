@@ -1,6 +1,10 @@
 import { IsOpenProvider } from "./isOpen";
-import { IsOpenProps } from "./interfaces";
+import { ReactNode } from "react";
 
-export const Providers = ({ children }: IsOpenProps) => {
+interface iProviders {
+  children: ReactNode;
+}
+
+export const Providers = ({ children }: iProviders) => {
   return <IsOpenProvider>{children}</IsOpenProvider>;
 };

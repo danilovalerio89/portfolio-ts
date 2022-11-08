@@ -1,5 +1,5 @@
-import { Button } from "../Button";
 import * as S from "./styles";
+import { Button } from "../Button";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { iInfos } from "../../data/InfosData";
 

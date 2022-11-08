@@ -4,8 +4,6 @@ import { NavBar } from "./NavBar";
 import { HeaderStyled, DivTitle } from "./styles";
 import { Typography } from "../../styles/typography";
 
-import { SideBarData } from "../../data/SideBarData";
-
 export function Header() {
   return (
     <>

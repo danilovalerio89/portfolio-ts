@@ -1,5 +1,5 @@
-import { useIsOpen } from "../../../providers/isOpen";
 import * as S from "./styles";
+import { useIsOpen } from "../../../providers/isOpen";
 
 function MenuBurguer() {
   const { isOpen, setIsOpen } = useIsOpen();

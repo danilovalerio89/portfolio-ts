@@ -1,5 +1,19 @@
 import { createContext, useContext, useState } from "react";
-import { IsOpenContextProps, IsOpenProps, defaultState } from "../interfaces";
+import { ReactNode } from "react";
+
+interface IsOpenContextProps {
+  isOpen: boolean;
+  setIsOpen: (newState: boolean) => void;
+}
+
+interface IsOpenProps {
+  children: ReactNode;
+}
+
+const defaultState = {
+  isOpen: false,
+  setIsOpen: () => {},
+};
 
 export const IsOpenContext = createContext<IsOpenContextProps>(defaultState);
 

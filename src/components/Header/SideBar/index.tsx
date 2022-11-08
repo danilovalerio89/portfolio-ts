@@ -1,5 +1,5 @@
-import { useIsOpen } from "../../../providers/isOpen";
 import * as S from "./styles";
+import { useIsOpen } from "../../../providers/isOpen";
 import { Button } from "../../Button";
 import { FiUser } from "react-icons/fi";
 import { RiComputerLine, RiFile3Line, RiMailLine } from "react-icons/ri";
