@@ -34,8 +34,9 @@ export function Home() {
         <ThemeBody fontSize="sm">Body 3</ThemeBody> */}
 
         {/* <About data={Infos} />
-        <Project /> */}
+         */}
         <Tecnology />
+        <Project />
       </S.Main>
       <Footer data={Infos} />
     </>

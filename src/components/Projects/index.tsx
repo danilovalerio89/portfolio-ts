@@ -1,71 +1,25 @@
+import { ThemeTitle } from "../../styles/typography";
+import { projects } from "../../data/projectsData";
+import * as S from "./styles";
+import { ProjectCard } from "./ProjectCard";
+
 export function Project() {
   return (
-    <section>
-      <h3>Projetos</h3>
-      <div>
-        <h4>Nome do Projeto</h4>
-        <div>
-          <figure>
-            <img src="#" alt="#" />
-          </figure>
-          <p>
-            Descrição do Projeto -
-            <br />
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa enim,
-            illo alias consequuntur sit totam laudantium! Quibusdam sed tempore
-            eaque quas iusto sapiente enim pariatur molestias. Exercitationem
-            blanditiis dolores culpa?
-          </p>
-        </div>
-      </div>
-      <div>
-        <h4>Nome do Projeto</h4>
-        <div>
-          <figure>
-            <img src="#" alt="#" />
-          </figure>
-          <p>
-            Descrição do Projeto -
-            <br />
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa enim,
-            illo alias consequuntur sit totam laudantium! Quibusdam sed tempore
-            eaque quas iusto sapiente enim pariatur molestias. Exercitationem
-            blanditiis dolores culpa?
-          </p>
-        </div>
-      </div>
-      <div>
-        <h4>Nome do Projeto</h4>
-        <div>
-          <figure>
-            <img src="#" alt="#" />
-          </figure>
-          <p>
-            Descrição do Projeto -
-            <br />
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa enim,
-            illo alias consequuntur sit totam laudantium! Quibusdam sed tempore
-            eaque quas iusto sapiente enim pariatur molestias. Exercitationem
-            blanditiis dolores culpa?
-          </p>
-        </div>
-      </div>
-      <div>
-        <h4>Nome do Projeto</h4>
-        <div>
-          <figure>
-            <img src="#" alt="#" />
-          </figure>
-          <p>
-            Descrição do Projeto -
-            <br />
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa enim,
-            illo alias consequuntur sit totam laudantium! Quibusdam sed tempore
-            eaque quas iusto sapiente enim pariatur molestias. Exercitationem
-            blanditiis dolores culpa?
-          </p>
-        </div>
-      </div>
-    </section>
+    <S.Section>
+      <ThemeTitle fontSize="md" tag="h3">
+        Projetos
+      </ThemeTitle>
+      <S.BoxProjects>
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            name={project.name}
+            image={project.image}
+            githubLink={project.githubLink}
+            vercelLink={project.vercelLink}
+          />
+        ))}
+      </S.BoxProjects>
+    </S.Section>
   );
 }
