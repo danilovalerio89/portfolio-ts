@@ -1,13 +1,17 @@
-interface CardTecnologyProps {
+import * as S from "./styles";
+
+interface iCard {
   name: string;
   img: string;
 }
 
-export function CardTecnology({ name, img }: CardTecnologyProps): JSX.Element {
+export function CardTecnology({ name, img }: iCard) {
   return (
-    <li>
+    <S.Li>
       <p>{name}</p>
-      <img src={img} alt={name} />
-    </li>
+      <figure>
+        <img src={img} alt={name} />
+      </figure>
+    </S.Li>
   );
 }

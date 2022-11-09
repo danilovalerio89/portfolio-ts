@@ -1,33 +1,25 @@
 import styled from "styled-components";
 
-export const TecnologySection = styled.section`
-  width: 100%;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-
-  h1 {
-    color: black;
-    text-align: center;
-  }
-
-  img {
-    background-color: #fff;
-  }
-`;
-
-export const TenologyDiv = styled.div`
+export const Section = styled.section`
+  padding: 0 5%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  width: 90%;
-  background-color: yellowgreen;
-  gap: 10px;
-  p {
-    color: black;
-  }
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
 `;
 
-export const UlTecnology = styled.ul`
+export const BoxCard = styled.div`
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+`;
+
+export const Ul = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
 `;

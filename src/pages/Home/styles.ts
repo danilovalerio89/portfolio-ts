@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Main = styled.main`
-  padding: 75px 5% 25px;
+  padding: 75px 0 25px;
   display: flex;
   flex-direction: column;
   align-items: center;
