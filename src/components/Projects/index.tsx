@@ -1,9 +1,7 @@
-import { Typography } from "../../styles/typography";
-
 export function Project() {
   return (
     <section>
-      <Typography tag={"h3"}>Projetos</Typography>
+      <h3>Projetos</h3>
       <div>
         <h4>Nome do Projeto</h4>
         <div>

@@ -2,15 +2,14 @@ import * as S from "./styles";
 import { Button } from "../Button";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { iInfos } from "../../data/InfosData";
-import { Typography } from "../../styles/typography";
 
 export function About({ data }: iInfos) {
   return (
     <S.AboutSection>
       <div>
         <p>Olá, sou o</p>
-        <Typography tag={"h1"}>Danilo</Typography>
-        <Typography tag={"h2"}>DESENVOLVEDOR FULL STACK</Typography>
+        <h1>Danilo</h1>
+        <h2>DESENVOLVEDOR FULL STACK</h2>
       </div>
       <div>
         <p>
