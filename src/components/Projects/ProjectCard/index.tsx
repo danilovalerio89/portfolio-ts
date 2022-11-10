@@ -1,4 +1,5 @@
 import { ThemeBody, ThemeTitle } from "../../../styles/typography";
+import { Button } from "../../Button";
 import * as S from "./styles";
 
 interface iProjects {
@@ -6,6 +7,8 @@ interface iProjects {
   image: string;
   vercelLink: string;
   githubLink: string;
+  description: string;
+  tecs: string;
 }
 
 export function ProjectCard({
@@ -13,6 +16,8 @@ export function ProjectCard({
   image,
   vercelLink,
   githubLink,
+  description,
+  tecs,
 }: iProjects) {
   return (
     <S.Div>
@@ -23,20 +28,19 @@ export function ProjectCard({
         <ThemeTitle fontSize="xs" tag="h4">
           {name}
         </ThemeTitle>
+        <ThemeBody fontSize="sm">{description}</ThemeBody>
         <ThemeBody fontSize="sm">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-          facilis accusantium dolores repudiandae ducimus cumque, doloribus
-          sapiente quo expedita, maxime beatae aliquid quidem. Eveniet
-          voluptatum laborum facilis temporibus provident soluta.
+          <b>Tecnologias:</b> {tecs}
         </ThemeBody>
-        <ThemeBody fontSize="sm">
-          Tecnologias: React, JavaScript, Axios, ContextAPI e Styled-Components
-        </ThemeBody>
+        <S.DivButtons>
+          <Button buttonStyle="outlineWhite" buttonSize="xs">
+            Link
+          </Button>
+          <Button buttonStyle="outlineWhite" buttonSize="xs">
+            Github
+          </Button>
+        </S.DivButtons>
       </S.DivInfo>
-      <S.DivButtons>
-        <button>git hub</button>
-        <button>link</button>
-      </S.DivButtons>
     </S.Div>
   );
 }

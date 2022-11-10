@@ -17,6 +17,8 @@ export function Project() {
             image={project.image}
             githubLink={project.githubLink}
             vercelLink={project.vercelLink}
+            description={project.description}
+            tecs={project.tecs}
           />
         ))}
       </S.BoxProjects>

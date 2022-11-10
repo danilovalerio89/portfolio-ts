@@ -26,6 +26,8 @@ export const DivInfo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 15px;
+  justify-content: space-between;
+  flex-grow: 1;
 `;
 
 export const DivButtons = styled.div`
