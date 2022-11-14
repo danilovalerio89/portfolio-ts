@@ -19,6 +19,8 @@ export function ProjectCard({
   description,
   tecs,
 }: iProjects) {
+  const handleClick = () => {};
+
   return (
     <S.Div>
       <S.Figure>
@@ -33,10 +35,18 @@ export function ProjectCard({
           <b>Tecnologias:</b> {tecs}
         </ThemeBody>
         <S.DivButtons>
-          <Button buttonStyle="outlineWhite" buttonSize="xs">
+          <Button
+            buttonStyle="outlineWhite"
+            buttonSize="xs"
+            onClick={() => window.open(vercelLink, "_blank")}
+          >
             Link
           </Button>
-          <Button buttonStyle="outlineWhite" buttonSize="xs">
+          <Button
+            buttonStyle="outlineWhite"
+            buttonSize="xs"
+            onClick={() => window.open(githubLink, "_blank")}
+          >
             Github
           </Button>
         </S.DivButtons>
