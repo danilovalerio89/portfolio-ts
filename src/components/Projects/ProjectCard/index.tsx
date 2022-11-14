@@ -19,8 +19,6 @@ export function ProjectCard({
   description,
   tecs,
 }: iProjects) {
-  const handleClick = () => {};
-
   return (
     <S.Div>
       <S.Figure>

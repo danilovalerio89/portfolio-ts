@@ -1,4 +1,5 @@
 import { IsOpenProvider } from "./isOpen";
+import { MyThemeProvider } from "./theme";
 import { ReactNode } from "react";
 
 interface iProviders {
@@ -6,5 +7,9 @@ interface iProviders {
 }
 
 export const Providers = ({ children }: iProviders) => {
-  return <IsOpenProvider>{children}</IsOpenProvider>;
+  return (
+    <MyThemeProvider>
+      <IsOpenProvider>{children}</IsOpenProvider>;
+    </MyThemeProvider>
+  );
 };
