@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Footer = styled.footer`
   padding: 0 5%;
-
+  background-color: ${({ theme }) => theme.background.default};
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,5 +14,3 @@ export const Contacts = styled.div`
   flex-direction: column;
   align-items: flex-start;
 `;
-
-/* background-color: ${({ theme }) => theme.dark?.background.default}; */

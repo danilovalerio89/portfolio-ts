@@ -8,13 +8,15 @@ export const Div = styled.div<IsOpenProps>`
   position: fixed;
   display: flex;
   align-items: flex-start;
-  background-color: var(--clr-dark-500);
+  background-color: ${({ theme }) => theme.background.default};
   border-radius: 0 0 0 5px;
   flex-direction: column;
   padding: 0 25px;
-  right: ${(props) => (props.isOpen ? "0%" : "-60%")};
+  right: ${(props) => (props.isOpen ? "0%" : "-80%")};
   transition: 0.7s;
-  border-top: var(--border-thin) solid var(--clr-light-100);
+  border-top: 1px solid ${({ theme }) => theme.white};
+  border-left: 1px solid ${({ theme }) => theme.white};
+  border-bottom: 1px solid ${({ theme }) => theme.white};
   @media (min-width: 768px) {
     display: none;
   }

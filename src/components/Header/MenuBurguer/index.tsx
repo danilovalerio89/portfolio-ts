@@ -9,14 +9,12 @@ function MenuBurguer() {
   };
 
   return (
-    <>
-      <S.LabelBox>
-        <S.InputBurguer onChange={() => handleChecked()} />
-        <S.SpanTop check={isOpen} />
-        <S.SpanMiddle check={isOpen} />
-        <S.SpanBottom check={isOpen} />
-      </S.LabelBox>
-    </>
+    <S.LabelBox>
+      <S.InputBurguer onChange={() => handleChecked()} />
+      <S.SpanTop check={isOpen} />
+      <S.SpanMiddle check={isOpen} />
+      <S.SpanBottom check={isOpen} />
+    </S.LabelBox>
   );
 }
 

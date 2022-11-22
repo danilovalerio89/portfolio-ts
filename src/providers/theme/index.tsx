@@ -1,6 +1,5 @@
 import { createContext, useContext, useState } from "react";
 import { ReactNode } from "react";
-import light from "../../styles/theme/light";
 import dark from "../../styles/theme/dark";
 import { DefaultTheme } from "styled-components";
 
@@ -25,7 +24,7 @@ interface iMyThemeContext {
 }
 
 const defaultTheme = {
-  theme: light,
+  theme: dark,
   setTheme: () => {},
 };
 

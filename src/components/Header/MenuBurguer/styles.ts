@@ -10,7 +10,7 @@ export const LabelBox = styled.label`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--clr-dark-500);
+  background-color: ${({ theme }) => theme.background.default};
   cursor: pointer;
 
   @media (min-width: 768px) {
@@ -22,7 +22,7 @@ export const SpanBase = styled.span<SpanProps>`
   position: absolute;
   width: 25px;
   height: 2px;
-  background-color: var(--clr-light-100);
+  background-color: ${({ theme }) => theme.white};
   border-radius: 3px;
   transition: transform 0.25s, opacity 0.35s;
 `;

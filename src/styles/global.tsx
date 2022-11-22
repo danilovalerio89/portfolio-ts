@@ -36,6 +36,8 @@ export default createGlobalStyle`
 
     --clr-background-secondary: #0A0F29;
     --clr-background-primary: #080C17;
+
+    --white: #FFFFFF;
 }
 
 a{
