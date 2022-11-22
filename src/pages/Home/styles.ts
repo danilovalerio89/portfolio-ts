@@ -8,6 +8,12 @@ export const Main = styled.main`
   background-color: var(--clr-background-primary);
 `;
 
+export const DivTheme = styled.div`
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+`;
+
 export const Div1 = styled.div`
   display: flex;
   justify-content: center;

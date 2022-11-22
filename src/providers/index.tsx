@@ -9,7 +9,7 @@ interface iProviders {
 export const Providers = ({ children }: iProviders) => {
   return (
     <MyThemeProvider>
-      <IsOpenProvider>{children}</IsOpenProvider>;
+      <IsOpenProvider>{children}</IsOpenProvider>
     </MyThemeProvider>
   );
 };

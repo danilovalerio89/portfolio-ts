@@ -13,9 +13,11 @@ export const LabelBox = styled.label`
   background-color: ${({ theme }) => theme.background.default};
   cursor: pointer;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     display: none;
   }
+
+  transition: 0.7s;
 `;
 
 export const SpanBase = styled.span<SpanProps>`

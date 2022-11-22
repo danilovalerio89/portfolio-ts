@@ -1,4 +1,4 @@
-import { HTMLAttributes, ReactNode, TextareaHTMLAttributes } from "react";
+import { ReactNode } from "react";
 
 export interface iTitle {
   children: ReactNode;

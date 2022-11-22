@@ -6,7 +6,7 @@ export default createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         font-family: 'Inter', sans-serif;
-        color: var(--clr-light-100);
+        color: ${({ theme }) => theme.white};
     }
 :root{
     --border-thin: 0.07rem;

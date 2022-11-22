@@ -7,6 +7,7 @@ export const Footer = styled.footer`
   justify-content: space-between;
   align-items: center;
   border-top: var(--border-thin) solid var(--clr-light-100);
+  transition: background-color 0.7s;
 `;
 
 export const Contacts = styled.div`

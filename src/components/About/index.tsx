@@ -19,11 +19,6 @@ export function About({ data }: iInfos) {
           me fazem me apaixonar cada vez mais pela área.
         </p>
       </div>
-      {/* <Title tag="h2">Danilo</Title>
-      <Title tag="h3">Danilo</Title>
-      <Title tag="h4">Danilo</Title>
-      <Title tag="h5">Danilo</Title>
-      <Title tag="h6">Danilo</Title> */}
     </S.AboutSection>
   );
 }
