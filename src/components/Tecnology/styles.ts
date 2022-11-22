@@ -8,6 +8,8 @@ export const Section = styled.section`
   justify-content: center;
   align-items: center;
   gap: 25px;
+  background-color: ${({ theme }) => theme.background.secondary};
+  transition: background-color 0.7s;
 `;
 
 export const BoxCard = styled.div`

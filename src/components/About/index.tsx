@@ -5,7 +5,7 @@ import { iInfos } from "../../data/InfosData";
 
 export function About({ data }: iInfos) {
   return (
-    <S.AboutSection>
+    <S.Section>
       <div>
         <p>Olá, sou o</p>
         <h1>Danilo</h1>
@@ -19,6 +19,6 @@ export function About({ data }: iInfos) {
           me fazem me apaixonar cada vez mais pela área.
         </p>
       </div>
-    </S.AboutSection>
+    </S.Section>
   );
 }

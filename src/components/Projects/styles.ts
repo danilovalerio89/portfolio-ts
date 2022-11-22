@@ -6,6 +6,8 @@ export const Section = styled.section`
   flex-direction: column;
   align-items: center;
   gap: 15px;
+  background-color: ${({ theme }) => theme.background.primary};
+  transition: background-color 0.7s;
 `;
 
 export const BoxProjects = styled.div`
