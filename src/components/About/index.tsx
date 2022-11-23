@@ -1,24 +1,42 @@
 import * as S from "./styles";
 import { Button } from "../Button";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { iInfos } from "../../data/InfosData";
+import { iInfos, Infos } from "../../data/InfosData";
 
 export function About({ data }: iInfos) {
+  const { name, stack, city, country, text, links } = data;
+
   return (
     <S.Section>
-      <div>
+      <S.DivAbout>
         <p>Olá, sou o</p>
-        <h1>Danilo</h1>
-        <h2>DESENVOLVEDOR FULL STACK</h2>
-      </div>
-      <div>
-        <p>
-          Futuro desenvolvedor FullStack pela KENZIE ACADEMY BRASIL. Sempre
-          buscando mais conhecimento e novos desafios. A constante evolução e a
-          possibilidade de resolver problemas de várias maneiras, são coisas que
-          me fazem me apaixonar cada vez mais pela área.
-        </p>
-      </div>
+        <h1>{name}</h1>
+        <h2>{stack.toUpperCase()}</h2>
+        {/* <div>
+          <span>{city}</span>
+          <span>{country}</span>
+        </div> */}
+      </S.DivAbout>
+      <S.DivText>
+        <p>{data.text}</p>
+
+        <S.DivButtons>
+          <Button
+            buttonStyle="outlineWhite"
+            buttonSize="sm"
+            onClick={() => window.open(links.git, "_blank")}
+          >
+            GitHub
+          </Button>
+          <Button
+            buttonSize="sm"
+            buttonStyle="outlineWhite"
+            onClick={() => window.open(links.linkedin, "_blank")}
+          >
+            LinkedIn
+          </Button>
+        </S.DivButtons>
+      </S.DivText>
     </S.Section>
   );
 }

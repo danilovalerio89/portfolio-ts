@@ -2,35 +2,44 @@ import styled from "styled-components";
 
 export const Section = styled.section`
   width: 100%;
+  padding: 24px 5%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 32px;
   background-color: ${({ theme }) => theme.background.primary};
-  span {
-    font-weight: 400;
-    line-height: 23px;
-  }
   transition: background-color 0.7s;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+  }
 `;
 
-export const DivInfos = styled.div`
+export const DivAbout = styled.div`
+  width: 100%;
+  max-width: 420px;
   display: flex;
   flex-direction: column;
-  margin: 40px 0;
-  h1 {
-    font-size: 46px;
+
+  gap: 24px;
+  @media (min-width: 768px) {
+    width: 40%;
+    border-right: 1px solid ${({ theme }) => theme.white};
   }
-  h3 {
-    font-size: 20px;
-    color: var(--clr-dark-200);
-  }
+`;
+
+export const DivText = styled.div`
+  max-width: 420px;
   p {
-    font-weight: 600;
-    font-size: 22px;
+    line-height: 24px;
   }
 `;
 
 export const DivButtons = styled.div`
-  margin: 25px 0;
+  margin: 0 auto;
   display: flex;
   justify-content: space-around;
+  padding: 16px 0;
+  max-width: 320px;
 `;
