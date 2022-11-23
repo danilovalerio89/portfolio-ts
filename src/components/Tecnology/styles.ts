@@ -8,7 +8,7 @@ export const Section = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 3rem;
   background-color: ${({ theme }) => theme.background.secondary};
   transition: background-color 0.7s;
 `;

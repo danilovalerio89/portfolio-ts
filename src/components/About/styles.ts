@@ -34,6 +34,7 @@ export const DivTitle = styled.div`
   span {
     font-size: 4rem;
     font-weight: 600;
+    cursor: default;
   }
 `;
 
