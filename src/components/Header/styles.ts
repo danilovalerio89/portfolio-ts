@@ -9,6 +9,7 @@ export const HeaderStyled = styled.header`
   width: 100vw;
   border-bottom: 1px solid ${({ theme }) => theme.white};
   transition: background-color 0.7s;
+  z-index: 1;
 `;
 
 export const DivTitle = styled.div`

@@ -29,6 +29,14 @@ export const DivAbout = styled.div`
   }
 `;
 
+export const DivTitle = styled.div`
+  display: flex;
+  span {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+`;
+
 export const DivText = styled.div`
   max-width: 420px;
   p {

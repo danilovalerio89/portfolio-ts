@@ -2,15 +2,22 @@ import * as S from "./styles";
 import { Button } from "../Button";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { iInfos, Infos } from "../../data/InfosData";
+import { TitleBounce } from "./TitleBounce";
 
 export function About({ data }: iInfos) {
   const { name, stack, city, country, text, links } = data;
+
+  const nameBounce = name.split("");
 
   return (
     <S.Section>
       <S.DivAbout>
         <p>Olá, sou o</p>
-        <h1>{name}</h1>
+        <S.DivTitle>
+          {nameBounce.map((letter, index) => (
+            <TitleBounce key={index}>{letter}</TitleBounce>
+          ))}
+        </S.DivTitle>
         <h2>{stack.toUpperCase()}</h2>
         {/* <div>
           <span>{city}</span>
