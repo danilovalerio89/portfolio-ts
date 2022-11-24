@@ -1,5 +1,12 @@
 import * as S from "./styles";
-import { About, Header, Footer, Project, Tecnology } from "../../components";
+import {
+  About,
+  Header,
+  Footer,
+  Project,
+  Tecnology,
+  Button,
+} from "../../components";
 import { ThemeButton } from "../../components/Button/ButtonIcon";
 import { Infos } from "../../data/InfosData";
 import { useTheme } from "../../providers/theme";

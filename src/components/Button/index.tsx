@@ -1,24 +1,30 @@
 import * as S from "./styles";
 import { ButtonHTMLAttributes, ReactNode } from "react";
 
-interface iButton extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface iButton extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   fullWidth?: boolean;
-  buttonSize?: "xs" | "sm" | "md" | "lg" | "xl" | "link" | "linkNav";
+  buttonSize?: "sm" | "md" | "lg" | "link" | "linkNav";
   buttonStyle:
     | "solidBlack"
     | "solidWhite"
+    | "solidDefault"
+    | "solidPrimary"
+    | "solidSecondary"
     | "outlineBlack"
     | "outlineWhite"
+    | "outlineDefault"
+    | "outlinePrimary"
+    | "outlineSecondary"
     | "link"
     | "linkNav";
 }
 
 export function Button({
   children,
-  buttonStyle,
+  buttonStyle = "solidBlack",
+  buttonSize = "md",
   fullWidth,
-  buttonSize,
   ...rest
 }: iButton) {
   return (

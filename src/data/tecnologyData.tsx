@@ -5,7 +5,6 @@ import TS from "../assets/icons/typescript.svg";
 import REACT from "../assets/icons/react.svg";
 import REDUX from "../assets/icons/redux.svg";
 import NODEJS from "../assets/icons/nodejs.svg";
-import JEST from "../assets/icons/jest.svg";
 import DOCKER from "../assets/icons/docker.svg";
 import POSTGRESQL from "../assets/icons/postgresql.svg";
 import PYTHON from "../assets/icons/python.svg";
@@ -45,10 +44,7 @@ export const tecnologyData: TecnologyProps[] = [
     name: "NodeJS",
     img: NODEJS,
   },
-  {
-    name: "Jest",
-    img: JEST,
-  },
+
   {
     name: "Docker",
     img: DOCKER,
