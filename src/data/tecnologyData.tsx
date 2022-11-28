@@ -9,6 +9,8 @@ import DOCKER from "../assets/icons/docker.svg";
 import POSTGRESQL from "../assets/icons/postgresql.svg";
 import PYTHON from "../assets/icons/python.svg";
 import DJANGO from "../assets/icons/django.svg";
+import JEST from "../assets/icons/jest.png";
+import EXPRESS from "../assets/icons/express.svg";
 
 interface TecnologyProps {
   name: string;
@@ -44,7 +46,14 @@ export const tecnologyData: TecnologyProps[] = [
     name: "NodeJS",
     img: NODEJS,
   },
-
+  {
+    name: "Express",
+    img: EXPRESS,
+  },
+  {
+    name: "Jest",
+    img: JEST,
+  },
   {
     name: "Docker",
     img: DOCKER,

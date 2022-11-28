@@ -10,10 +10,12 @@ export const Li = styled.li`
     height: 95px;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   img {
     width: 80%;
+    height: fit-content;
     display: flex;
     align-items: center;
     &:hover {

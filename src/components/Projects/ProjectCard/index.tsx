@@ -35,14 +35,14 @@ export function ProjectCard({
         <S.DivButtons>
           <Button
             buttonStyle="outlineWhite"
-            buttonSize="xs"
+            buttonSize="sm"
             onClick={() => window.open(vercelLink, "_blank")}
           >
             Link
           </Button>
           <Button
             buttonStyle="outlineWhite"
-            buttonSize="xs"
+            buttonSize="sm"
             onClick={() => window.open(githubLink, "_blank")}
           >
             Github
