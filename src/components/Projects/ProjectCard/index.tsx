@@ -1,3 +1,5 @@
+import { useState } from "react";
+import { useSpring, animated } from "react-spring";
 import { ThemeBody, ThemeTitle } from "../../../styles/typography";
 import { Button } from "../../Button";
 import * as S from "./styles";
@@ -19,36 +21,47 @@ export function ProjectCard({
   description,
   tecs,
 }: iProjects) {
+  const [show, setShown] = useState(false);
+
+  const scale = useSpring({
+    transform: show ? "scale(1.03)" : "scale(1)",
+  });
   return (
-    <S.Div>
-      <S.Figure>
-        <img src={image} alt={name} />
-      </S.Figure>
-      <S.DivInfo>
-        <ThemeTitle fontSize="xs" tag="h4">
-          {name}
-        </ThemeTitle>
-        <ThemeBody fontSize="sm">{description}</ThemeBody>
-        <ThemeBody fontSize="sm">
-          <b>Tecnologias:</b> {tecs}
-        </ThemeBody>
-        <S.DivButtons>
-          <Button
-            buttonStyle="outlineWhite"
-            buttonSize="sm"
-            onClick={() => window.open(vercelLink, "_blank")}
-          >
-            Link
-          </Button>
-          <Button
-            buttonStyle="outlineWhite"
-            buttonSize="sm"
-            onClick={() => window.open(githubLink, "_blank")}
-          >
-            Github
-          </Button>
-        </S.DivButtons>
-      </S.DivInfo>
-    </S.Div>
+    <animated.div
+      style={scale}
+      onMouseEnter={() => setShown(true)}
+      onMouseLeave={() => setShown(false)}
+    >
+      <S.Div>
+        <S.Figure>
+          <img src={image} alt={name} />
+        </S.Figure>
+        <S.DivInfo>
+          <ThemeTitle fontSize="xs" tag="h4">
+            {name}
+          </ThemeTitle>
+          <ThemeBody fontSize="sm">{description}</ThemeBody>
+          <ThemeBody fontSize="sm">
+            <b>Tecnologias:</b> {tecs}
+          </ThemeBody>
+          <S.DivButtons>
+            <Button
+              buttonStyle="outlineWhite"
+              buttonSize="sm"
+              onClick={() => window.open(vercelLink, "_blank")}
+            >
+              Link
+            </Button>
+            <Button
+              buttonStyle="outlineWhite"
+              buttonSize="sm"
+              onClick={() => window.open(githubLink, "_blank")}
+            >
+              Github
+            </Button>
+          </S.DivButtons>
+        </S.DivInfo>
+      </S.Div>
+    </animated.div>
   );
 }

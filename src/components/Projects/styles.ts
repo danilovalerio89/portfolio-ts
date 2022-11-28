@@ -13,8 +13,13 @@ export const Section = styled.section`
 
 export const BoxProjects = styled.div`
   max-width: 800px;
+  margin-top: 25px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   gap: 15px;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 `;

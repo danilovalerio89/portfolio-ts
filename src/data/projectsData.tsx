@@ -2,6 +2,7 @@ import CALCULADORA from "../assets/projectsImg/calculadora.png";
 import NUKENZIE from "../assets/projectsImg/nukenzie.png";
 import KBURGUER from "../assets/projectsImg/kburguer.png";
 import KHUB from "../assets/projectsImg/khub.png";
+import BACKEND from "../assets/projectsImg/backend.png";
 
 interface iProjects {
   name: string;
@@ -48,5 +49,25 @@ export const projects: iProjects[] = [
     tecs: "JavaScript, React e CSS.",
     vercelLink: "https://kenzie-burguer-one.vercel.app/",
     githubLink: "https://github.com/danilovalerio89/Kenzie-Burguer",
+  },
+
+  {
+    name: "Dev Cobre API",
+    image: BACKEND,
+    description:
+      "Sistema é focado na parte de cobrança de dívidas, organizando de uma forma prática e rápida para facilitar o contato e assim realizar um acordo com o dividendo.",
+    tecs: "TypeScript, NodeJS, Express e TypeORM",
+    vercelLink: "https://github.com/danilovalerio89/DevCobre",
+    githubLink: "https://github.com/danilovalerio89/DevCobre",
+  },
+
+  {
+    name: "Kollection API",
+    image: BACKEND,
+    description:
+      "API para organização de trabalhos acadêmicos, onde é possível ter seus feedbacks e aprovações de professores.",
+    tecs: "Python, Django e PostgreSQL",
+    vercelLink: "https://github.com/danilovalerio89/kollection-api",
+    githubLink: "https://github.com/danilovalerio89/kollection-api",
   },
 ];
