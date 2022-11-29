@@ -6,7 +6,7 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  gap: 4rem;
   background-color: ${({ theme }) => theme.background.primary};
   transition: background-color 0.7s;
 `;

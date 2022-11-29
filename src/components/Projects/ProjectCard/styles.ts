@@ -10,7 +10,9 @@ export const Div = styled.div`
   gap: 10px;
   margin: 0 0 35px 0;
   border-radius: 5px;
-  border: 1px solid white;
+  border: 1px solid ${({ theme }) => theme.white};
+  background-color: ${({ theme }) => theme.background.primary};
+  cursor: pointer;
 `;
 
 export const Figure = styled.figure`
