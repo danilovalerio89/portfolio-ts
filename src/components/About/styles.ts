@@ -14,6 +14,10 @@ export const Section = styled.section`
     flex-direction: row;
     justify-content: center;
   }
+
+  p {
+    cursor: default;
+  }
 `;
 
 export const DivAbout = styled.div`

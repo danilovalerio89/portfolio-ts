@@ -18,9 +18,14 @@ export const Li = styled.li`
     height: fit-content;
     display: flex;
     align-items: center;
+    border-radius: 10px;
     &:hover {
       width: 100%;
     }
     transition: 0.5s;
+  }
+
+  p {
+    cursor: default;
   }
 `;

@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import { BaseBody, BaseTitle } from "./components/typography";
 
 export const ThemeTitle = styled(BaseTitle)`
+  cursor: default;
   ${({ fontSize }) => {
     switch (fontSize) {
       case "xs":
@@ -59,6 +60,7 @@ export const ThemeTitle = styled(BaseTitle)`
 `;
 
 export const ThemeBody = styled(BaseBody)`
+  cursor: default;
   ${({ fontSize }) => {
     switch (fontSize) {
       case "sm":
