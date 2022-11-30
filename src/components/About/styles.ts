@@ -11,6 +11,7 @@ export const Section = styled.section`
   transition: background-color 0.7s;
 
   @media (min-width: 768px) {
+    padding: 6.25rem 5%;
     flex-direction: row;
     justify-content: center;
   }
@@ -30,6 +31,7 @@ export const DivAbout = styled.div`
   @media (min-width: 768px) {
     width: 40%;
     border-right: 1px solid ${({ theme }) => theme.white};
+    height: 230px;
   }
 `;
 
@@ -44,6 +46,9 @@ export const DivTitle = styled.div`
 
 export const DivText = styled.div`
   max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   p {
     line-height: 24px;
   }
@@ -52,7 +57,8 @@ export const DivText = styled.div`
 export const DivButtons = styled.div`
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 16px 0;
   max-width: 320px;
+  width: 100%;
 `;

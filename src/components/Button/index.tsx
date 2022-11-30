@@ -3,7 +3,7 @@ import { ButtonHTMLAttributes, ReactNode } from "react";
 
 export interface iButton extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
-  fullWidth?: boolean;
+  fullWidth?: string;
   buttonSize?: "sm" | "md" | "lg" | "link" | "linkNav";
   buttonStyle:
     | "solidBlack"

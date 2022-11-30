@@ -9,6 +9,10 @@ export const Section = styled.section`
   gap: 4rem;
   background-color: ${({ theme }) => theme.background.primary};
   transition: background-color 0.7s;
+
+  @media (min-width: 768px) {
+    padding: 6.25rem 5%;
+  }
 `;
 
 export const BoxProjects = styled.div`

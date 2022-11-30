@@ -9,10 +9,10 @@ export const Button = styled.button<iButton>`
   justify-content: center;
   white-space: nowrap;
   gap: 10px;
-  ${(props) =>
-    props.fullWidth &&
+  ${({ fullWidth }) =>
+    fullWidth &&
     css`
-      width: 100%;
+      width: ${fullWidth}%;
     `}
 
   ${(props) => {

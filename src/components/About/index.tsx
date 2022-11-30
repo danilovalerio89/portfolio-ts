@@ -2,6 +2,7 @@ import * as S from "./styles";
 import { Button } from "../Button";
 import { iInfos } from "../../data/InfosData";
 import { TitleBounce } from "./TitleBounce";
+import { ThemeBody, ThemeTitle } from "../../styles/typography";
 
 export function About({ data }: iInfos) {
   const { name, stack, links } = data;
@@ -11,28 +12,32 @@ export function About({ data }: iInfos) {
   return (
     <S.Section>
       <S.DivAbout>
-        <p>Olá, sou o</p>
+        <ThemeBody fontSize="lg">Olá, sou o</ThemeBody>
         <S.DivTitle>
           {nameBounce.map((letter, index) => (
             <TitleBounce key={index}>{letter}</TitleBounce>
           ))}
         </S.DivTitle>
-        <h2>{stack.toUpperCase()}</h2>
+        <ThemeTitle tag="h2" fontSize="xs">
+          {stack.toUpperCase()}
+        </ThemeTitle>
       </S.DivAbout>
       <S.DivText>
-        <p>{data.text}</p>
+        <ThemeBody fontSize="md">{data.text}</ThemeBody>
 
         <S.DivButtons>
           <Button
             buttonStyle="outlineWhite"
             buttonSize="sm"
+            fullWidth="45"
             onClick={() => window.open(links.git, "_blank")}
           >
             GitHub
           </Button>
           <Button
             buttonSize="sm"
-            buttonStyle="outlineWhite"
+            buttonStyle="outlineBlack"
+            fullWidth="45"
             onClick={() => window.open(links.linkedin, "_blank")}
           >
             LinkedIn

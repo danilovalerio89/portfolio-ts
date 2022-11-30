@@ -11,6 +11,10 @@ export const Section = styled.section`
   gap: 3rem;
   background-color: ${({ theme }) => theme.background.secondary};
   transition: background-color 0.7s;
+
+  @media (min-width: 768px) {
+    padding: 6.25rem 5%;
+  }
 `;
 
 export const BoxCard = styled.div`
