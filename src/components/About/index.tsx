@@ -3,6 +3,7 @@ import { Button } from "../Button";
 import { iInfos } from "../../data/InfosData";
 import { TitleBounce } from "./TitleBounce";
 import { ThemeBody, ThemeTitle } from "../../styles/typography";
+import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 export function About({ data }: iInfos) {
   const { name, stack, links } = data;
@@ -32,6 +33,7 @@ export function About({ data }: iInfos) {
             fullWidth="45"
             onClick={() => window.open(links.git, "_blank")}
           >
+            <FiGithub style={{ fill: "black" }} size={20} />
             GitHub
           </Button>
           <Button
@@ -40,6 +42,7 @@ export function About({ data }: iInfos) {
             fullWidth="45"
             onClick={() => window.open(links.linkedin, "_blank")}
           >
+            <FiLinkedin style={{ fill: "black" }} size={20} />
             LinkedIn
           </Button>
         </S.DivButtons>

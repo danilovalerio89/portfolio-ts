@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FiLink, FiGithub } from "react-icons/fi";
 import { useSpring, animated } from "react-spring";
 import { ThemeBody, ThemeTitle } from "../../../styles/typography";
 import { Button } from "../../Button";
@@ -46,10 +47,11 @@ export function ProjectCard({
           </ThemeBody>
           <S.DivButtons>
             <Button
-              buttonStyle="outlineWhite"
+              buttonStyle="outlineBlack"
               buttonSize="sm"
               onClick={() => window.open(vercelLink, "_blank")}
             >
+              <FiLink style={{ fill: "black" }} />
               Link
             </Button>
             <Button
@@ -57,6 +59,7 @@ export function ProjectCard({
               buttonSize="sm"
               onClick={() => window.open(githubLink, "_blank")}
             >
+              <FiGithub style={{ fill: "black" }} />
               Github
             </Button>
           </S.DivButtons>
