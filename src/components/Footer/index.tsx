@@ -6,7 +6,7 @@ import { ThemeTitle } from "../../styles/typography";
 export function Footer({ data }: iInfos) {
   return (
     <>
-      <S.Footer>
+      <S.Footer id="contacts">
         <S.Contacts>
           <Button
             buttonStyle="link"

@@ -9,10 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/react-router-dom": "^5.3.3",
+    "@types/react-router-hash-link": "^2.4.5",
     "framer-motion": "^7.6.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
+    "react-router-dom": "^6.4.3",
+    "react-router-hash-link": "^2.4.3",
     "react-spring": "^9.5.5",
     "react-spring-3d-carousel": "^1.2.1",
     "styled-components": "^5.3.6"

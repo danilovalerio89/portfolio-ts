@@ -26,7 +26,7 @@ export function Project() {
   };
 
   return (
-    <S.Section>
+    <S.Section id="projects">
       <ThemeTitle fontSize="md" tag="h3">
         Projetos
       </ThemeTitle>

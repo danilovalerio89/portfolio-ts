@@ -11,7 +11,7 @@ export function About({ data }: iInfos) {
   const nameBounce = name.split("");
 
   return (
-    <S.Section>
+    <S.Section id="about">
       <S.DivAbout>
         <ThemeBody fontSize="lg">Olá, sou o</ThemeBody>
         <S.DivTitle>

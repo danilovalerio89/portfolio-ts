@@ -5,7 +5,7 @@ import { ThemeTitle } from "../../styles/typography";
 
 export function Tecnology() {
   return (
-    <S.Section>
+    <S.Section id="tecnology">
       <ThemeTitle fontSize="md" tag="h3">
         Tecnologias
       </ThemeTitle>
