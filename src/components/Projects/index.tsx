@@ -1,8 +1,8 @@
-import { ThemeTitle } from "../../styles/typography";
 import { projects } from "../../data/projectsData";
 import * as S from "./styles";
 import { ProjectCard } from "./ProjectCard";
 import { Caroussel } from "./Carousel";
+import { ThemeTitle } from "../../styles/typography";
 
 export function Project() {
   const createCards = (projects: any) => {

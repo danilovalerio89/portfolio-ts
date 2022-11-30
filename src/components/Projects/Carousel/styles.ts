@@ -15,5 +15,6 @@ export const Div = styled.div`
 
   @media (min-width: 1024px) {
     width: 80%;
+    max-width: 800px;
   }
 `;

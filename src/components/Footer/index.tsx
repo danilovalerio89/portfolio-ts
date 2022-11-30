@@ -2,6 +2,7 @@ import * as S from "./styles";
 import { Button } from "../Button";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { iInfos } from "../../data/InfosData";
+import { ThemeTitle } from "../../styles/typography";
 export function Footer({ data }: iInfos) {
   return (
     <>
@@ -24,9 +25,9 @@ export function Footer({ data }: iInfos) {
             LinkedIn
           </Button>
         </S.Contacts>
-        <h1>
+        <ThemeTitle tag="h2" fontSize="xl">
           &lt;/<b>D</b>&gt;
-        </h1>
+        </ThemeTitle>
       </S.Footer>
     </>
   );

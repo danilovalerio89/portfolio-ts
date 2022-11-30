@@ -1,11 +1,10 @@
 import * as S from "./styles";
 import { Button } from "../Button";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { iInfos, Infos } from "../../data/InfosData";
+import { iInfos } from "../../data/InfosData";
 import { TitleBounce } from "./TitleBounce";
 
 export function About({ data }: iInfos) {
-  const { name, stack, city, country, text, links } = data;
+  const { name, stack, links } = data;
 
   const nameBounce = name.split("");
 
@@ -19,10 +18,6 @@ export function About({ data }: iInfos) {
           ))}
         </S.DivTitle>
         <h2>{stack.toUpperCase()}</h2>
-        {/* <div>
-          <span>{city}</span>
-          <span>{country}</span>
-        </div> */}
       </S.DivAbout>
       <S.DivText>
         <p>{data.text}</p>
