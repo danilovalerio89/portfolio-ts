@@ -1,3 +1,5 @@
+import { iTecnology } from "../interfaces/tecnology.interface";
+
 import HTML from "../assets/icons/html.svg";
 import CSS from "../assets/icons/css.svg";
 import JS from "../assets/icons/javascript.svg";
@@ -12,13 +14,7 @@ import DJANGO from "../assets/icons/django.svg";
 import JEST from "../assets/icons/jest.png";
 import EXPRESS from "../assets/icons/express.svg";
 
-interface TecnologyProps {
-  name: string;
-  img: string;
-  link: string;
-}
-
-export const tecnologyData: TecnologyProps[] = [
+export const tecnologyData: iTecnology[] = [
   {
     name: "HTML",
     img: HTML,

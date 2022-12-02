@@ -1,6 +1,6 @@
 import * as S from "./styles";
 import { Button } from "../Button";
-import { iInfos } from "../../data/InfosData";
+import { iInfos } from "../../data/infosData";
 import { TitleBounce } from "./TitleBounce";
 import { ThemeBody, ThemeTitle } from "../../styles/typography";
 import { FiGithub, FiLinkedin } from "react-icons/fi";

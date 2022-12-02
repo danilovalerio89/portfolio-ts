@@ -1,19 +1,12 @@
+import { iProject } from "../interfaces/project.interface";
+
 import CALCULADORA from "../assets/projectsImg/calculadora.png";
 import NUKENZIE from "../assets/projectsImg/nukenzie.png";
 import KBURGUER from "../assets/projectsImg/kburguer.png";
 import KHUB from "../assets/projectsImg/khub.png";
 import BACKEND from "../assets/projectsImg/backend.png";
 
-interface iProjects {
-  name: string;
-  image: string;
-  vercelLink: string;
-  githubLink: string;
-  description: string;
-  tecs: string;
-}
-
-export const projects: iProjects[] = [
+export const projects: iProject[] = [
   {
     name: "Calc. Antecipação",
     image: CALCULADORA,

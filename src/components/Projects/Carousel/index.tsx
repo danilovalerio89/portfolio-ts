@@ -10,9 +10,9 @@ export function Caroussel(props: any) {
     return { ...element, onClick: () => setGoToSlide(index) };
   });
 
-  const [offsetRadius, setOffsetRadius] = useState(4);
-  const [showArrows, setShowArrows] = useState(false);
-  const [goToSlide, setGoToSlide] = useState<any>(null);
+  const [offsetRadius, setOffsetRadius] = useState<number>(4);
+  const [showArrows, setShowArrows] = useState<boolean>(false);
+  const [goToSlide, setGoToSlide] = useState<number | undefined>(undefined);
   const [cards] = useState(table);
 
   useEffect(() => {

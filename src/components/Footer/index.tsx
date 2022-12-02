@@ -1,7 +1,7 @@
 import * as S from "./styles";
 import { Button } from "../Button";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { iInfos } from "../../data/InfosData";
+import { iInfos } from "../../data/infosData";
 import { ThemeTitle } from "../../styles/typography";
 export function Footer({ data }: iInfos) {
   return (

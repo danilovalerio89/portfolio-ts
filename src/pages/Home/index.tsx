@@ -1,7 +1,7 @@
 import * as S from "./styles";
 import { About, Header, Footer, Project, Tecnology } from "../../components";
 import { ThemeButton } from "../../components/Button/ButtonIcon";
-import { Infos } from "../../data/InfosData";
+import { userData } from "../../data/infosData";
 import { useTheme } from "../../providers/theme";
 import light from "../../styles/theme/light";
 import dark from "../../styles/theme/dark";
@@ -25,11 +25,11 @@ export function Home() {
             Thema
           </ThemeButton>
         </S.DivTheme>
-        <About data={Infos} />
+        <About data={userData} />
         <Tecnology />
         <Project />
       </S.Main>
-      <Footer data={Infos} />
+      <Footer data={userData} />
     </>
   );
 }

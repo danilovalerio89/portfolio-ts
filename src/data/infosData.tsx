@@ -1,24 +1,7 @@
+import { iUser } from "../interfaces/user.interface";
 import IMG from "../assets/new-foto.jpg";
 
-export interface iPerson {
-  name: string;
-  img: string;
-  stack: string;
-  about: string;
-  city: string;
-  country: string;
-  text: string;
-  links: {
-    git: string;
-    linkedin: string;
-  };
-}
-
-export interface iInfos {
-  data: iPerson;
-}
-
-export const Infos: iPerson = {
+export const userData: iUser = {
   name: "Danilo",
   img: IMG,
   stack: "DESENVOLVEDOR FULL STACK",
