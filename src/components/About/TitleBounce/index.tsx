@@ -41,3 +41,11 @@ export function TitleBounce({ children }: iTitleBounce) {
     </motion.span>
   );
 }
+
+export function CreateBounce(word: string) {
+  const wordBounce = word.split("");
+
+  return wordBounce.map((letter, index) => (
+    <TitleBounce key={index}>{letter}</TitleBounce>
+  ));
+}

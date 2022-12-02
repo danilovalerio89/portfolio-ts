@@ -1,7 +1,7 @@
 import * as S from "./styles";
 import { About, Header, Footer, Project, Tecnology } from "../../components";
 import { ThemeButton } from "../../components/Button/ButtonIcon";
-import { userData } from "../../data/infosData";
+import { userData } from "../../data/userData";
 import { useTheme } from "../../providers/theme";
 import light from "../../styles/theme/light";
 import dark from "../../styles/theme/dark";

@@ -1,31 +1,28 @@
 import * as S from "./styles";
 import { Button } from "../Button";
-import { iInfos } from "../../data/infosData";
-import { TitleBounce } from "./TitleBounce";
+import { CreateBounce, TitleBounce } from "./TitleBounce";
 import { ThemeBody, ThemeTitle } from "../../styles/typography";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
+import { iUser } from "../../data/userData";
 
-export function About({ data }: iInfos) {
+type iData = {
+  data: iUser;
+};
+
+export function About({ data }: iData) {
   const { name, stack, links } = data;
-
-  const nameBounce = name.split("");
 
   return (
     <S.Section id="about">
       <S.DivAbout>
         <ThemeBody fontSize="lg">Olá, sou o</ThemeBody>
-        <S.DivTitle>
-          {nameBounce.map((letter, index) => (
-            <TitleBounce key={index}>{letter}</TitleBounce>
-          ))}
-        </S.DivTitle>
+        <S.DivTitle>{CreateBounce(name)}</S.DivTitle>
         <ThemeTitle tag="h2" fontSize="xs">
           {stack.toUpperCase()}
         </ThemeTitle>
       </S.DivAbout>
       <S.DivText>
         <ThemeBody fontSize="md">{data.text}</ThemeBody>
-
         <S.DivButtons>
           <Button
             buttonStyle="outlineWhite"
