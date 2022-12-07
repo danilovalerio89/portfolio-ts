@@ -1,9 +1,14 @@
 import * as S from "./styles";
 import { Button } from "../Button";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { iInfos } from "../../data/userData";
 import { ThemeTitle } from "../../styles/typography";
-export function Footer({ data }: iInfos) {
+import { iUser } from "../../data/userData";
+
+type iData = {
+  data: iUser;
+};
+
+export function Footer({ data }: iData) {
   return (
     <>
       <S.Footer id="contacts">

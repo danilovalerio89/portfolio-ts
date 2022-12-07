@@ -10,13 +10,7 @@ interface iCard {
   content: ReactNode;
 }
 
-interface iCaroussel extends Carousel {
-  cards: iCard[];
-  offset: number;
-  showArrows: boolean;
-}
-
-export function Caroussel(props: iCaroussel) {
+export function Caroussel(props: any) {
   const table = props.cards.map((element: iCard, index: number) => {
     return { ...element, onClick: () => setGoToSlide(index) };
   });
