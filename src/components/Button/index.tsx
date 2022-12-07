@@ -4,6 +4,7 @@ import { ButtonHTMLAttributes, ReactNode } from "react";
 export interface iButton extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   fullWidth?: string;
+  justify?: "left" | "center" | "right";
   buttonSize?: "sm" | "md" | "lg" | "link" | "linkNav";
   buttonStyle:
     | "solidBlack"
@@ -25,6 +26,7 @@ export function Button({
   buttonStyle = "solidBlack",
   buttonSize = "md",
   fullWidth,
+  justify = "center",
   ...rest
 }: iButton) {
   return (
@@ -32,6 +34,7 @@ export function Button({
       buttonStyle={buttonStyle}
       fullWidth={fullWidth}
       buttonSize={buttonSize}
+      justify={justify}
       {...rest}
     >
       {children}

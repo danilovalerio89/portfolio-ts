@@ -6,7 +6,7 @@ export const Button = styled.button<iButton>`
   border-radius: 5px;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: ${({ justify }) => justify};
   white-space: nowrap;
   gap: 10px;
   ${({ fullWidth }) =>
