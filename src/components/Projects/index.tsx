@@ -1,36 +1,20 @@
 import { projects } from "../../data/projectsData";
 import * as S from "./styles";
 import { ProjectCard } from "./ProjectCard";
-import { Caroussel } from "./Carousel";
+import { Caroussel, CreateCardsCarousel } from "./Carousel";
 import { ThemeTitle } from "../../styles/typography";
 
 export function Project() {
-  const createCards = (projects: any) => {
-    let cards = projects.map((item: any, index: any) => {
-      return {
-        key: index,
-        content: (
-          <ProjectCard
-            key={index}
-            name={item.name}
-            image={item.image}
-            githubLink={item.githubLink}
-            vercelLink={item.vercelLink}
-            description={item.description}
-            tecs={item.tecs}
-          />
-        ),
-      };
-    });
-    return cards;
-  };
-
   return (
     <S.Section id="projects">
       <ThemeTitle fontSize="md" tag="h3">
         Projetos
       </ThemeTitle>
-      <Caroussel cards={createCards(projects)} offset={2} showArrows={false} />
+      <Caroussel
+        cards={CreateCardsCarousel(projects)}
+        offset={2}
+        showArrows={false}
+      />
       <S.BoxProjects>
         {projects.map((project, index) => (
           <ProjectCard

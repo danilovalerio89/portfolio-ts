@@ -5,7 +5,7 @@ import { ThemeBody, ThemeTitle } from "../../../styles/typography";
 import { Button } from "../../Button";
 import * as S from "./styles";
 
-interface iProjects {
+interface iProject {
   name: string;
   image: string;
   vercelLink: string;
@@ -21,7 +21,7 @@ export function ProjectCard({
   githubLink,
   description,
   tecs,
-}: iProjects) {
+}: iProject) {
   const [show, setShown] = useState(false);
 
   const scale = useSpring({

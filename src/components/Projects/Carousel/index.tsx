@@ -2,6 +2,8 @@ import Carousel from "react-spring-3d-carousel";
 import { useState, useEffect } from "react";
 import { config } from "react-spring";
 import * as S from "./styles";
+import { iProject } from "../../../data/projectsData";
+import { ProjectCard } from "../ProjectCard";
 
 interface iCarousel {}
 
@@ -31,4 +33,24 @@ export function Caroussel(props: any) {
       />
     </S.Div>
   );
+}
+
+export function CreateCardsCarousel(projects: iProject[]) {
+  let cards = projects.map((item: iProject, index: number) => {
+    return {
+      key: index,
+      content: (
+        <ProjectCard
+          key={index}
+          name={item.name}
+          image={item.image}
+          githubLink={item.githubLink}
+          vercelLink={item.vercelLink}
+          description={item.description}
+          tecs={item.tecs}
+        />
+      ),
+    };
+  });
+  return cards;
 }
