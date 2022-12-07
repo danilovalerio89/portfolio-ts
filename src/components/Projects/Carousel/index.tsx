@@ -1,14 +1,23 @@
 import Carousel from "react-spring-3d-carousel";
-import { useState, useEffect } from "react";
+import { useState, useEffect, ReactNode } from "react";
 import { config } from "react-spring";
 import * as S from "./styles";
 import { iProject } from "../../../data/projectsData";
 import { ProjectCard } from "../ProjectCard";
 
-interface iCarousel {}
+interface iCard {
+  key: number;
+  content: ReactNode;
+}
 
-export function Caroussel(props: any) {
-  const table = props.cards.map((element: any, index: any) => {
+interface iCaroussel extends Carousel {
+  cards: iCard[];
+  offset: number;
+  showArrows: boolean;
+}
+
+export function Caroussel(props: iCaroussel) {
+  const table = props.cards.map((element: iCard, index: number) => {
     return { ...element, onClick: () => setGoToSlide(index) };
   });
 
